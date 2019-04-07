@@ -1,4 +1,4 @@
-package com.javasampleapproach.kotlinspringboot.angular5
+package com.guarascio.evopoller2.springboot
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication

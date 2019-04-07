@@ -1,4 +1,4 @@
-package com.javasampleapproach.kotlinspringboot.angular5
+package com.guarascio.evopoller2.springboot
 
 import org.junit.Test
 import org.junit.runner.RunWith
