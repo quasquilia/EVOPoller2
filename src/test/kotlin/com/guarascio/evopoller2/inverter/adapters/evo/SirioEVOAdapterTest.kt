@@ -2,6 +2,7 @@ package com.guarascio.evopoller2.inverter.adapters.evo
 
 import org.junit.Assert.*
 import org.junit.Test
+import java.io.InputStream
 
 class SirioEVOAdapterTest {
 
@@ -13,8 +14,8 @@ class SirioEVOAdapterTest {
 
     @Test
     fun contextLoads() {
-        val pageStream = SirioEVOAdapterTest::class.java.getResourceAsStream("SirioEVOPage.htm")
-        var sut = SirioEVOAdapter.PageParser(pageStream)
+        val pageStream: InputStream? = SirioEVOAdapterTest::class.java.getResourceAsStream("SirioEVOPage.htm")
+        var sut = SirioEVOAdapter.PageParser(pageStream!!)
 
         val sample = sut.processPage()
 
