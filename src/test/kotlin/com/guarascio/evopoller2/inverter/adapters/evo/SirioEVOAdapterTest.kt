@@ -14,11 +14,13 @@ class SirioEVOAdapterTest {
 
     @Test
     fun contextLoads() {
-        val pageStream: InputStream? = SirioEVOAdapterTest::class.java.getResourceAsStream("SirioEVOPage.htm")
+        val pageStream: InputStream? = SirioEVOAdapterTest::class.java.getResourceAsStream("/SirioEVOPage.htm")
         var sut = SirioEVOAdapter.PageParser(pageStream!!)
 
         val sample = sut.processPage()
 
         assertEquals(968.0, sample.power, Constants.PRECISION)
+        assertEquals(38040.6, sample.energy, Constants.PRECISION)
+
     }
 }

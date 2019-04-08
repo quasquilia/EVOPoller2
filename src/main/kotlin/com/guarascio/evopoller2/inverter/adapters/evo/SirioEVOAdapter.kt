@@ -40,10 +40,9 @@ class SirioEVOAdapter(var sirioInverterURL: String) {
             get() = field
 
         fun processPage(): InverterSample {
-            val bufferedReader = BufferedReader(InputStreamReader(inputStream, "UTF-8"))
-            bufferedReader.useLines {
-                it.map { this::consumeLine }
-            }
+            BufferedReader(InputStreamReader(inputStream))
+                    .lines()
+                    .forEach(this::consumeLine)
 
             return inverterSample
         }
