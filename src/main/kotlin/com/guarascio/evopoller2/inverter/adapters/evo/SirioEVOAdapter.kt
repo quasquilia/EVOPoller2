@@ -1,18 +1,16 @@
 package com.guarascio.evopoller2.inverter.adapters.evo
 
 import com.guarascio.evopoller2.inverter.domainobjects.InverterSample
+import com.guarascio.evopoller2.inverter.ports.InverterPort
 import java.io.*
 import java.net.URL
 
-class SirioEVOAdapter(var sirioInverterURL: String) {
+class SirioEVOAdapter(var sirioInverterURL: String) : InverterPort {
 
-    fun performRequest(): InverterSample? {
+    fun loadSample(): InverterSample? {
 
-
-        // configure the SSLContext with a TrustManager
         val url = URL(sirioInverterURL)
 
-        //Logger.info("Opening page $url")
         val conn = url.openConnection()
         var inputStream: InputStream? = null
         var result: InverterSample? = null
@@ -26,6 +24,4 @@ class SirioEVOAdapter(var sirioInverterURL: String) {
         }
         return result
     }
-
-
 }
