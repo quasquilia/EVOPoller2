@@ -4,7 +4,7 @@ import org.junit.Assert.*
 import org.junit.Test
 import java.io.InputStream
 
-class SirioEVOAdapterTest {
+class PageParserTest {
 
     class Constants {
         companion object {
@@ -13,9 +13,9 @@ class SirioEVOAdapterTest {
     }
 
     @Test
-    fun contextLoads() {
-        val pageStream: InputStream? = SirioEVOAdapterTest::class.java.getResourceAsStream("/SirioEVOPage.htm")
-        var sut = SirioEVOAdapter.PageParser(pageStream!!)
+    fun powerAndEnergyAreParsedFromHtmlPage() {
+        val pageStream: InputStream? = PageParserTest::class.java.getResourceAsStream("/SirioEVOPage.htm")
+        var sut = PageParser(pageStream!!)
 
         val sample = sut.processPage()
 
