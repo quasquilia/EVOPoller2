@@ -9,5 +9,8 @@
         <module name="KotlinSpringBootAngular5" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="KotlinSpringBootAngular5" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
