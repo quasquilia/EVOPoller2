@@ -14,6 +14,7 @@ data class OpenWeatherMapCondition(
     )
 
     data class OpenWeatherMapWeather(
+            @JsonProperty("id") var id: Int,
             @JsonProperty("main") var main: String,
             @JsonProperty("description") var description: String
     )
