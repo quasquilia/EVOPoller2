@@ -1,6 +1,5 @@
-package com.guarascio.evopoller2.weather.adapters.wunderground
+package com.guarascio.evopoller2.weather.adapters.openweather
 
-import com.guarascio.evopoller2.weather.domainobjects.Condition
 import com.guarascio.evopoller2.weather.domainobjects.Weather
 import org.springframework.web.client.RestTemplate
 import java.net.URI

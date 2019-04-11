@@ -1,6 +1,6 @@
-package com.guarascio.evopoller2.weather.adapters.wunderground
+package com.guarascio.evopoller2.weather.adapters.openweather
 
-import com.guarascio.evopoller2.weather.adapters.wunderground.OpenWeatherMapCondition.OpenWeatherMapWeather
+import com.guarascio.evopoller2.weather.adapters.openweather.OpenWeatherMapCondition.OpenWeatherMapWeather
 import com.guarascio.evopoller2.weather.domainobjects.Condition
 
 class ConditionTranslator {

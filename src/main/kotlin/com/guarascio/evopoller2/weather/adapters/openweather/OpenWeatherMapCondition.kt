@@ -1,4 +1,4 @@
-package com.guarascio.evopoller2.weather.adapters.wunderground
+package com.guarascio.evopoller2.weather.adapters.openweather
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class OpenWeatherMapCondition(
