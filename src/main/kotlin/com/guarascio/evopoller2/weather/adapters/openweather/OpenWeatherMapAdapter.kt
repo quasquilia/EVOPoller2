@@ -15,11 +15,13 @@ class OpenWeatherMapAdapter {
                 OpenWeatherMapCondition::class.java)
         return Weather(Date(), conditions.main.tempK -273.15, translator.condition(conditions.weather[0]))
     }
-
+/*
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
             println(OpenWeatherMapAdapter().getWeather())
         }
     }
+
+ */
 }

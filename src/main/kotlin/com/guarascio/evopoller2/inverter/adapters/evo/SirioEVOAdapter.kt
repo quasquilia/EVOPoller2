@@ -2,6 +2,7 @@ package com.guarascio.evopoller2.inverter.adapters.evo
 
 import com.guarascio.evopoller2.inverter.domainobjects.InverterSample
 import com.guarascio.evopoller2.inverter.ports.InverterPort
+import org.springframework.context.annotation.Bean
 import java.io.*
 import java.net.URL
 
