@@ -1,3 +1,7 @@
 package com.guarascio.evopoller2.inverter.ports
 
-interface InverterPort
+import com.guarascio.evopoller2.inverter.domainobjects.InverterSample
+
+interface InverterPort {
+    fun loadSample(): InverterSample?
+}

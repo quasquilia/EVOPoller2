@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 @Component
 @ConfigurationProperties("app")
 data class AppProperties(
-        @Value("\${application.inverterUrl}") var inverterUrl: String
+        @Value("\${application.inverterIP}") var inverterUrl: String
 ) {
 
 }

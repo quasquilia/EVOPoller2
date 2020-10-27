@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="EVOPoller2" />
         <module name="KotlinSpringBootAngular5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="EVOPoller2" target="1.8" />
       <module name="KotlinSpringBootAngular5" target="1.8" />
     </bytecodeTargetLevel>
   </component>
